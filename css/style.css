@@ -1,0 +1,266 @@
+body {
+  background: #2F414F;
+  max-width: 100%;
+  min-height: 100%;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+html {
+  font-size: 16px
+  height: 100%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+/* Navbar Section */
+nav {
+  text-align: center;
+  position: relative;
+  top: 0; 
+}
+
+nav ul {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  list-style-type: none;
+  background-color: #000;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  letter-spacing: 1;
+  font-weight: bold;
+  font-size: 1rem;
+  display: block;
+  text-decoration: none;
+  padding: 20px;
+  color: white;
+}
+
+nav a:hover {
+  transition: 0.3s ease-in;
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+}
+
+/* title Section */
+.title-container {
+  position: relative;
+  top: 25vh;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+}
+
+.title-container h1 {
+  text-shadow: 2px 2px 4px #000000;
+  font-size: 2.5rem;
+  letter-spacing: 8px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: white;  
+}
+
+.title-container h2 {
+  text-shadow: 2px 2px 4px #000000;
+  font-size: 1.75rem;
+  letter-spacing: 4px;
+  font-weight: bold;
+  color: white;
+  margin-top: 15px;
+}
+
+.title-container hr {
+  text-align: center;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.title-img-container img {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  border: 1px solid black;
+  margin: 15px 0;
+  height: 280px;
+  width: 240px;
+}
+
+/* About Me Section */
+.about-container {
+  position: relative;
+  top: 5vh;
+  height: 100vh;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  max-width: 100%;
+}
+
+.about-container h2 {
+  position: relative;
+  top: 20vh;
+  text-shadow: 2px 2px 4px #000000;
+  text-align: center;
+  font-size: 2.25rem;
+  letter-spacing: 4px;
+  font-weight: bold;
+  color: white;
+}
+
+.about-container p {
+  position: relative;
+  top: 35vh;
+  max-width: 70%;
+  margin: 0 auto;
+  padding: 40px;
+  height: 40vh;
+  font-size: 1rem;
+  line-height: 34px;
+  letter-spacing: 1px;
+  text-align: justify;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
+
+/* Websites Section */
+.websites-container {
+  position: relative;
+  top: 5vh;
+  max-height: 100vh;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.websites-header {
+  grid-area: 1 / 1 / 2 / 5; 
+  text-shadow: 2px 2px 4px #000000;
+  text-align: center;
+  font-size: 2.25rem;
+  letter-spacing: 4px;
+  font-weight: bold;
+  color: white;
+  position: relative;
+  top: 20vh;
+}
+.img-container {
+  text-align: center;
+}
+
+.img1 {
+  grid-area: 2 / 1 / 3 / 2
+}
+
+.img2, {
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+.img3 {
+  grid-area: 2 / 3 / 3 / 4;
+}
+
+.img4 {
+  grid-area: 2 / 4 / 3 / 5;
+}
+
+.img-container h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.img-container p {
+  font-size: 1rem;
+  line-height: 20px;
+  padding: 20px;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
+
+.img-container a {
+  height: 280px;
+}
+
+.img-container img {
+  vertical-align: bottom;
+  width: 300px;
+  height: 280px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+.img-container a:hover {
+  opacity: 0.5;
+  position: relative;
+  top: 2px;
+}
+
+/* footer Section */
+footer {
+  position: relative;
+  bottom: -200px;
+  max-width: 100%;
+  height: 60px;
+  text-align: center;
+  background-color: #000;
+}
+
+footer ul {
+  list-style-type: none;
+} 
+
+footer li {
+  display: inline-block;
+}
+
+footer a {
+  font-size: 1rem;
+  letter-spacing: 1;
+  font-weight: bold;
+  color: white;
+  display: block;
+  text-decoration: none;
+  padding: 20px;
+}
+
+footer ul li a:hover {
+  transition: 0.3s ease-in;
+  background-color: #fff;
+  color: black;
+  font-weight: bold;
+}
+
+footer small {
+  color: white;
+  font-size: 0.75rem;
+  float: right;
+  position: relative;
+  bottom: 35px;
+  right: 4px;
+}
+
+footer .icon-container {
+  color: white;
+  float: left;
+  position: relative;
+  bottom: 55px;
+}
+
+footer .icon-container i {
+  font-size: 1rem;
+}
+
+footer .icon-container a {
+  display: inline-block;
+}
+
+footer .icon-container a:hover {
+  background-color: #fff;
+  color: #000;
+}
